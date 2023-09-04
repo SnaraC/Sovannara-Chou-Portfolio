@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovannara Chou</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/new-logo-removebg-preview.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="glyphicon glyphicon-remove" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#work"> Work & Education </a></li>
+                    <li><a href="#projects"> Project </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <li><a href="#resume" class="resume-home-btn"> Resume </a></li>
+                </ul>
+            </div>
+            <i class="glyphicon glyphicon-align-justify" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1> Welcome To My Portfolio Webpage</h1>
+            <h1>I am Sovannara Chou</h1>
+            <a href="#contact" class="contact-home-btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+        <div class="title-text">
+            <h2>About Me</h2>
+            <hr>
+        </div>
+        <div class="container-about">
+            <div class="text-container-about">
+                <p>I am a highly motivated and detail-oriented student of Computer Science and Software Engineering at
+                    the University of Washington Bothell, with a unique perspective and diverse background.</p>
+                <p id="p-hide" style="display: none;">I was born and raised in Phnom Penh, Cambodia, and in 2017, I made
+                    the move to the United States. My educational path commenced at Edmond College, where I initially
+                    pursued a degree in software engineering.
+                    However, due to my family circumstances, I transitioned to a mechatronics technical degree.
+                    After successfully obtaining my mechatronics degree at Everett Community College,
+                    I came to realize that my passion for computer science remained strong within me.
+                    I decided to come back to Edmond College, where I resumed my studies to earn a transfer degree to
+                    the University of Washington Bothell.</p>
+                <p id="p-hide" style="display: none;">My personal experiences have inspired in me the values of hard
+                    work, perseverance, and adaptability,
+                    which I apply to my academic and professional pursuits.
+                </p>
+                <p>
+                    I am currently seeking for an internship and
+                    entry software engineering job. I am committed to developing innovative solutions and producing
+                    high-quality work, and I believe that my diverse background and unique perspective make me a
+                    valuable asset to any team.
+                </p>
+                <button onclick="myFunction()" class="contact-home-btn" id="myBtn">Read more</button>
+            </div>
+            <div class="img-container-about">
+                <img src="image/image_50745857.JPG" alt="my-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Work & Education -->
+
+    <section class="work" id="work">
+        <div class="title-text">
+            <h2>My Work Experience & Education History</h2>
+            <hr>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">Mercury Pharmacy Services</span>
+                        <span class="time-wrapper"><span class="time">2017 - present</span></span>
+                    </div>
+                    <div class="desc">Part-time Pharmacist Assistant</div>
+                </div>
+            </li>
+
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Everett Community College</span>
+                        <span class="time-wrapper"><span class="time">September 2018 - March 2020</span></span>
+                    </div>
+                    <div class="desc">Full-time Student</div>
+                </div>
+            </li>
+
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">Boeing</span>
+                        <span class="time-wrapper"><span class="time">July 2019 - August 2019</span></span>
+                    </div>
+                    <div class="desc">Mechatronic Intern</div>
+                </div>
+            </li>
+
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Edmonds College</span>
+                        <span class="time-wrapper"><span class="time">July 2020 - August 2021</span></span>
+                    </div>
+                    <div class="desc">Full-time Student</div>
+                </div>
+            </li>
+
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">University of Washington Bothell</span>
+                        <span class="time-wrapper"><span class="time">September 2021 - 2023</span></span>
+                    </div>
+                    <div class="desc">Full-time Student</div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Project -->
+
+    <section class="project-about" id="projects">
+        <div class="title-text">
+            <h2>Projects</h2>
+            <hr>
+        </div>
+        <div class="projects-container">
+            <div class="project">
+                <div class="project-image">
+                    <div>
+                        <img width="64" height="64"
+                            src="https://img.icons8.com/glyph-neue/64/partly-cloudy-rain--v2.png"
+                            alt="partly-cloudy-rain--v2" />
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <div>
+                            Weather Tracking Application
+                        </div>
+                        <a href="https://github.com/SnaraC/Weather-Application" target="_blank"> <svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 64 64">
+                                <path
+                                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="project-desc">Designed and implemented a user-friendly application to access real-time
+                    traffic and weather forecasts through a dynamic interface. Users can conveniently enter a city name
+                    in the search bar to receive up-to-the-minute updates.</div>
+                <div class="project-tools">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                    <span>Google API</span>
+                    <span>Git</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <div>
+                        <img width="64" height="64"
+                            src="https://img.icons8.com/glyph-neue/64/partly-cloudy-rain--v2.png"
+                            alt="partly-cloudy-rain--v2" />
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <div>
+                            Street Fighter Clone
+                        </div>
+                        <a href="https://github.com/SnaraC/The-Fighter-2D-Game" target="_blank"> <svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 64 64">
+                                <path
+                                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="project-desc">Developed a 2D fighting game using the Unity cross-platform game engine,
+                    incorporating a multiplayer networking system to enhance the interactive gameplay experience with
+                    Unity script and C#.</div>
+                <div class="project-tools">
+                    <span>C#</span>
+                    <span>Unity Script</span>
+                    <span>Unity Game Engine</span>
+                    <span>Github</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <div>
+                        <img width="64" height="64" src="https://img.icons8.com/?size=512&id=8305&format=png"
+                            alt="partly-cloudy-rain--v2" />
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <div>
+                            Travel Application Database
+                        </div>
+                        <a href="https://github.com/SnaraC/Travel-Application-Database-SQL" target="_blank"> <svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 64 64">
+                                <path
+                                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="project-desc">Developed a comprehensive database application to manage and store crucial
+                    data to customer hotel reservations, rental car bookings, and flight arrangements. Leveraged SQL
+                    server for robust testing and execution of associated scripts.</div>
+                <div class="project-tools">
+                    <span>SQL</span>
+                    <span>Git</span>
+                    <span>LucidChart</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <div>
+                        <img width="64" height="64" src="https://img.icons8.com/?size=1x&id=77iHQnb2ZTjZ&format=png"
+                            alt="partly-cloudy-rain--v2" />
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <div>
+                            Depression prediction in hypertensive populations
+                        </div>
+                        <a href="https://github.com/SnaraC/Machine-Learning-Research-Project" target="_blank"> <svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 64 64">
+                                <path
+                                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="project-desc">Led essential tasks within a machine learning project encompassing data
+                    collection, organization, and cleansing. Proficiently executed the complete ML process including
+                    model selection, rigorous training, testing, and comprehensive result interpretation</div>
+                <div class="project-tools">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>TensorFlow</span>
+                    <span>Google Colab</span>
+                    <span>Jupyter Notebook</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <div>
+                        <img width="64" height="64"
+                            src="https://img.icons8.com/glyph-neue/64/partly-cloudy-rain--v2.png"
+                            alt="partly-cloudy-rain--v2" />
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <div>
+                            Banking System Application
+                        </div>
+                        <a href="https://github.com/SnaraC/Banking-System" target="_blank"> <svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 64 64">
+                                <path
+                                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="project-desc">Executed a project involving queues, binary search trees, and class design in
+                    C++. Developed a banking application with sequential transaction processing in three phases: reading
+                    transactions into a queue, sequential processing, and comprehensive account information display.
+                </div>
+                <div class="project-tools">
+                    <span>C++</span>
+                    <span>Windows</span>
+                    <span>Linux</span>
+                    <span>OOP</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Resume -->
+    <section class="resume" id="resume">
+        <div class="resume-info">
+            <h2>Check Out My Resume</h2>
+            <a href="#contact" class="resume-btn">Resume</a>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="title-text">
+            <h2>Let me know what's on your mind!</h2>
+            <hr>
+        </div>
+        <div class="form">
+            <div class="contact-info">
+                <img class="img-photo" src="/image/image1.jpg" alt="my-photo">
+                <img width="100" height="100" src="https://img.icons8.com/?size=512&id=6mtfF8X7F8eV&format=png">
+                <p>Email: chousovannara@gmail.com</p>
+                <div>Phone: +1(713) 530-7101</div>
+                <div class="social-media">
+                    <a href="mailto:schou99@uw.edu" target="_top" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/in/sovannara-chou-834371225/" class="fa fa-linkedin"
+                        target="_blank"></a>
+                    <a href="https://www.facebook.com/sovannara.chou/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/nara__chou/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://github.com/SnaraC" target="_blank"><i class="fa fa-github"
+                            style="font-size:50px"></i></a><br>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">>> Contact <<< </h3>
+                            <h4>Currently unavailable due to the absence of a JS form account to post the email. Please
+                                use the email logo on the left to send me an email!</h4>
+                            <div class="input-container">
+                                <input type="text" name="name" class="input" />
+                                <label for="">Your name</label>
+                                <span>Username</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" name="email" class="input" />
+                                <label for="">Email</label>
+                                <span>Email</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="tel" name="phone" class="input" />
+                                <label for="">Phone</label>
+                                <span>Phone</span>
+                            </div>
+                            <div class="input-container textarea">
+                                <textarea name="message" class="input"></textarea>
+                                <label for="">Message</label>
+                                <span>Message</span>
+                            </div>
+                            <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & built by Sovannara Chou</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
